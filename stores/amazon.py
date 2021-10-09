@@ -1836,7 +1836,7 @@ def get_timestamp_filename(name, extension):
 
 def get_shipping_costs(tree, free_shipping_string):
     # This version expects to find the shipping pricing within a div with the explicit ID 'delivery-message'
-    shipping_xpath = ".//div[@id='delivery-message']"
+    shipping_xpath = ".//div[@id='mir-layout-DELIVERY_BLOCK-slot-DELIVERY_MESSAGE']"
     shipping_nodes = tree.xpath(shipping_xpath)
     count = len(shipping_nodes)
     if count > 0:
